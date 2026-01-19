@@ -1,0 +1,120 @@
+/* Contact Page Styles */
+.contact-page {
+    padding-top: var(--spacing-xl);
+    padding-bottom: var(--spacing-lg);
+}
+
+.contact-title {
+    text-align: center;
+    margin-bottom: var(--spacing-lg);
+    color: var(--color-primary);
+    font-size: 3rem;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-lg);
+}
+
+.contact-img {
+    width: 100%;
+    margin-bottom: var(--spacing-md);
+    border-radius: 4px;
+}
+
+.contact-details-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--spacing-md);
+}
+
+.contact-item h3 {
+    color: var(--color-primary);
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.contact-item p {
+    opacity: 0.7;
+}
+
+.contact-form-container {
+    background: #1a1a1a;
+    padding: 3rem;
+    border-radius: 4px;
+}
+
+.contact-form-container h2 {
+    color: var(--color-primary);
+    margin-bottom: 2rem;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.form-input,
+.form-select,
+.form-textarea {
+    padding: 1rem;
+    background: transparent;
+    border: 1px solid #333;
+    color: #fff;
+    outline: none;
+    font-family: inherit;
+}
+
+.form-textarea {
+    resize: vertical;
+}
+
+.form-btn {
+    width: 100%;
+    margin-top: 1rem;
+}
+
+/* Tablet (max-width: 1024px) */
+@media (max-width: 1024px) {
+    .contact-grid {
+        gap: var(--spacing-md);
+    }
+
+    .contact-title {
+        font-size: 2.5rem;
+    }
+}
+
+/* Mobile (max-width: 768px) */
+@media (max-width: 768px) {
+    .contact-page {
+        padding-top: var(--spacing-lg);
+    }
+
+    .contact-grid {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-lg);
+    }
+
+    /* Contact Form comes last, Info first on mobile naturally because of HTML order */
+
+    .contact-details-grid {
+        grid-template-columns: 1fr 1fr;
+        /* Keep 2 cols on mobile if possible, or 1fr for very small */
+        gap: 1.5rem;
+    }
+
+    .contact-form-container {
+        padding: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-details-grid {
+        grid-template-columns: 1fr;
+    }
+}
