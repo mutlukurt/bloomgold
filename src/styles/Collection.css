@@ -1,0 +1,92 @@
+.collection-page {
+    padding-top: 8rem;
+    /* Space for fixed header */
+    min-height: 80vh;
+}
+
+.collection-header {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.collection-header h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: var(--color-primary);
+}
+
+.filter-bar {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+    flex-wrap: wrap;
+}
+
+.filter-btn {
+    font-family: var(--font-body);
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    color: var(--color-grey);
+    padding-bottom: 0.3rem;
+    border-bottom: 1px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+    color: var(--color-primary);
+    border-bottom-color: var(--color-primary);
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 3rem 2rem;
+}
+
+@media (max-width: 768px) {
+    .collection-page {
+        padding-top: 6rem;
+    }
+
+    .collection-header {
+        margin-bottom: 2.5rem;
+    }
+
+    .collection-header h1 {
+        font-size: 2.2rem;
+    }
+
+    .filter-bar {
+        gap: 1rem;
+        overflow-x: auto;
+        justify-content: flex-start;
+        padding-bottom: 1rem;
+        -webkit-overflow-scrolling: touch;
+        /* Smooth scrolling on iOS */
+        margin-bottom: 2rem;
+    }
+
+    /* Hide scrollbar for cleaner look */
+    .filter-bar::-webkit-scrollbar {
+        height: 4px;
+    }
+
+    .filter-bar::-webkit-scrollbar-thumb {
+        background: rgba(212, 175, 55, 0.3);
+        border-radius: 2px;
+    }
+
+    .filter-btn {
+        flex-shrink: 0;
+        white-space: nowrap;
+    }
+
+    .product-grid {
+        grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+        /* Smaller cards for mobile */
+        gap: 1.5rem 1rem;
+    }
+}

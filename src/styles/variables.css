@@ -1,0 +1,50 @@
+:root {
+  /* Colors */
+  --color-primary: #D4AF37;
+  /* Gold */
+  --color-primary-light: #F7E7CE;
+  /* Champagne */
+  --color-secondary: #043927;
+  /* Dark Emerald */
+  --color-dark: #0F0F0F;
+  /* Deep Black */
+  --color-light: #F9F9F9;
+  /* Off-white */
+  --color-grey: #808080;
+
+  /* Typography */
+  --font-heading: 'Playfair Display', serif;
+  --font-body: 'Inter', sans-serif;
+
+  /* Spacing */
+  --spacing-xs: 0.5rem;
+  --spacing-sm: 1rem;
+  --spacing-md: 2rem;
+  --spacing-lg: 4rem;
+  --spacing-xl: 8rem;
+
+  /* Transitions */
+  --transition-fast: 0.2s ease;
+  --transition-medium: 0.4s ease;
+}
+
+@media (max-width: 768px) {
+  :root {
+    --spacing-md: 1.5rem;
+    --spacing-lg: 2.5rem;
+    --spacing-xl: 4rem;
+  }
+
+  html {
+    font-size: 14px;
+    /* Slightly smaller base font size for mobile */
+  }
+}
+
+@media (max-width: 480px) {
+  :root {
+    --spacing-sm: 0.75rem;
+    --spacing-md: 1.25rem;
+    --spacing-lg: 2rem;
+  }
+}

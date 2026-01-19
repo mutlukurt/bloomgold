@@ -1,0 +1,113 @@
+.footer {
+    background-color: #051a12;
+    /* Darker shade of emerald */
+    color: var(--color-light);
+    padding: 6rem 0 2rem;
+    border-top: 1px solid rgba(212, 175, 55, 0.1);
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 4rem;
+    margin-bottom: 4rem;
+}
+
+.footer-logo {
+    font-family: var(--font-heading);
+    color: var(--color-primary);
+    margin-bottom: 1rem;
+}
+
+.footer-brand p {
+    opacity: 0.7;
+    max-width: 300px;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-around;
+}
+
+.link-column h3 {
+    font-family: var(--font-body);
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 1.5rem;
+    color: var(--color-primary);
+}
+
+.link-column a {
+    display: block;
+    margin-bottom: 0.8rem;
+    opacity: 0.7;
+    font-size: 0.95rem;
+}
+
+.link-column a:hover {
+    opacity: 1;
+    color: var(--color-primary-light);
+    transform: translateX(5px);
+}
+
+.social-icons {
+    display: flex;
+    gap: 1rem;
+}
+
+.social-icons a {
+    width: 40px;
+    height: 40px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.social-icons a:hover {
+    border-color: var(--color-primary);
+    color: var(--color-primary);
+}
+
+.footer-bottom {
+    text-align: center;
+    opacity: 0.4;
+    font-size: 0.8rem;
+    padding-top: 2rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+@media (max-width: 768px) {
+    .footer {
+        padding: 4rem 0 2rem;
+    }
+
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+        text-align: center;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .footer-brand p {
+        margin: 0 auto;
+    }
+
+    .social-icons {
+        justify-content: center;
+        gap: 1.5rem;
+    }
+
+    .social-icons a {
+        width: 44px;
+        /* Larger tap target */
+        height: 44px;
+    }
+}
