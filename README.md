@@ -1,5 +1,11 @@
 # Bloom Gold - Luxury Jewelry E-Commerce
 
+<div align="center">
+
+[![Live Demo](https://img.shields.io/badge/Live_Demo-bloomgold.vercel.app-2ea44f?style=for-the-badge&logo=vercel&logoColor=white)](https://bloomgold.vercel.app/)
+
+</div>
+
 Bloom Gold is a premium, high-end e-commerce application designed for a luxury jewelry brand. It features a sophisticated design system, seamless shopping experience, and fully responsive layout optimized for all devices.
 
 ![Desktop Preview](src/assets/preview-desktop.png)
