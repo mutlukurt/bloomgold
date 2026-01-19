@@ -7,7 +7,7 @@ const path = require('path');
     const page = await browser.newPage();
 
     // Ensure assets directory exists
-    const assetsDir = path.join(__dirname, '../src/assets');
+    const assetsDir = path.join(__dirname, 'src/assets');
     if (!fs.existsSync(assetsDir)) {
         fs.mkdirSync(assetsDir, { recursive: true });
     }
