@@ -2,7 +2,11 @@
 
 Bloom Gold is a premium, high-end e-commerce application designed for a luxury jewelry brand. It features a sophisticated design system, seamless shopping experience, and fully responsive layout optimized for all devices.
 
-![Project Preview](src/assets/hero-bg.jpg)
+![Desktop Preview](src/assets/preview-desktop.png)
+
+<div align="center">
+  <img src="src/assets/preview-mobile.png" alt="Mobile Preview" width="300" style="border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.15);" />
+</div>
 
 ## 🚀 Technologies Used
 
