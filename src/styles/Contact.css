@@ -92,7 +92,7 @@
 /* Mobile (max-width: 768px) */
 @media (max-width: 768px) {
     .contact-page {
-        padding-top: var(--spacing-lg);
+        padding-top: 8rem;
     }
 
     .contact-grid {
