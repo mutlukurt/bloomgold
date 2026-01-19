@@ -11,11 +11,13 @@ import Contact from './pages/Contact';
 
 import Privacy from './pages/Privacy';
 import Terms from './pages/Terms';
+import ScrollToTop from './components/ScrollToTop';
 
 function App() {
   return (
     <ShopProvider>
       <Router>
+        <ScrollToTop />
         <div className="app-container">
           <Header />
           <CartDrawer />
